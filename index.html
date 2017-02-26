@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/car-view-main.css">
+		<link rel="stylesheet" type="text/css" href="css/component.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/car-view-control.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+	</head>
+	<body onresize="resize()">
+		<div class="cv-row-container" onresize="resize()">
+			<!--
+            	作者：tttbbb222000@163.com
+            	时间：2017-02-19
+            	描述：第1面
+            -->
+            <script type="text/javascript">
+            	initialize();
+            	setFixWidth(320);
+            </script>
+			<div class = "cv-car-view-container view-1 ">
+				<img id = "touch-board-1" class="cv-touch-board" src="img/touchboard.png"  usemap="#Map1" border="0" alt="触摸层">
+				<map name="Map1" id="Map1">
+				<!--  <area class="area-part part4-01"  shape="poly" coords="229,38,278,56,288,56,302,52,274,42" href="javascript:;"></area>-->
+				</map> 
+				<img id = "back-img-1" class="cv-back-img" src = "img/back-img-1.png"/>
+			</div>
+			 <script type="text/javascript"> 
+				setCarViewContainerWidth();
+            	calculateRatio($('#touch-board-1').width());
+            	recalculateMatrix();
+            </script>
+			<!--
+            	作者：tttbbb222000@163.com
+            	时间：2017-02-19
+            	描述：第2面
+            -->
+			<div class = "cv-car-view-container view-2 none"> 
+				<img id = "touch-board-2" class="cv-touch-board" src="img/touchboard.png"  usemap="#Map2" border="0" alt="汽车部位">
+				<map name="Map2" id="Map2">
+				</map> 
+				<img id = "back-img-2" class="cv-back-img" src = "img/back-img-2.png" />
+			</div>
+			<!--
+            	作者：tttbbb222000@163.com
+            	时间：2017-02-19
+            	描述：第3面
+            -->
+			<div class = "cv-car-view-container view-3 none"> 
+				<img id = "touch-board-3" class="cv-touch-board" src="img/touchboard.png"  usemap="#Map3" border="0" alt="汽车部位">
+				<map name="Map3" id="Map3">
+				  
+				</map> 
+				<img id = "back-img-3" class="cv-back-img" src = "img/back-img-3.png" />
+			</div>
+			<!--
+            	作者：tttbbb222000@163.com
+            	时间：2017-02-19
+            	描述：第4面
+            -->
+			<div class = "cv-car-view-container view-4 none"> 
+				<img id = "touch-board-4" class="cv-touch-board" src="img/touchboard.png"  usemap="#Map4" border="0" alt="汽车部位">
+				<map name="Map4" id="Map4">
+				   
+				</map> 
+				<img id = "back-img-4" class="cv-back-img" src = "img/back-img-4.png" /> 
+			</div>
+		</div>
+		<script type="text/javascript">
+				setCarViewContainerWidth(); 
+				setContainerHeight();
+            	constructAreas();
+            	eventInitialize();
+        </script>
+		  
+		<div class="other-part">
+			<ul style="padding-left: 10px;margin:0px;margin-top: 10px;padding-bottom: 5px;border-bottom: 1px solid #ddd;">
+				<div>以下为使用示例：(非最终效果)</div>
+			</ul>
+			<ul style="text-align: right;    overflow: auto;">
+				<div class="cv-whole-car-penqi-button">整车喷漆</div>
+			</ul>
+			<ul class="cv-components-desc">
+				<!--<li>
+					<div class="cv-desc-title">哈哈哈</div>
+					<div class="">喷漆</div>
+					<div class="cv-desc-selected">钣金</div>
+				</li>-->
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$("div.other-part").css("margin-top",$("div.cv-row-container").height()+10);
+			bindWholeCarButtonEvent();
+        </script>
+		
+		<!--<div class="" style = "margin:auto; text-align: center;margin-top:20px"> 
+			<textarea cols="40" rows="8" id = "showPoints" ></textarea>
+		 
+		</div>-->
+		 
+	</body>
+	<script type="text/javascript"> 
+	</script>
+</html>

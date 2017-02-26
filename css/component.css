@@ -1,0 +1,64 @@
+ul.cv-components-desc{
+	padding-left: 0px;
+}
+ul.cv-components-desc li{
+	list-style-type:none;  
+	background: #ddd;
+    border-top: 1px solid #b5b4b4;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul.cv-components-desc li div{ 
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+}
+ul.cv-components-desc li div.cv-desc-title{
+	border: 1px solid #ddd;
+	background: #ddd;
+	border-radius: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+    width: 25%;
+    text-align: left;
+    cursor: auto;
+}
+
+
+ul.cv-components-desc li div.cv-service{ 
+	min-width: 50px;
+	width:15%;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+
+ul.cv-components-desc li div.cv-desc-selected{
+	border: 1px solid #1242ca;
+	background: #769fcc;
+	border-radius: 5px;
+}
+
+ul.cv-components-desc li div.cv-penqi{}
+ul.cv-components-desc li div.cv-banjin{}
+
+div.cv-whole-car-penqi-button{
+	margin-right: 30px; 
+	float: right;
+	border: 1px solid #ddd;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #ddd;
+    cursor: pointer;
+}
+
+div.button-selected{
+	border: 1px solid #1242ca;
+	background: #769fcc;
+}

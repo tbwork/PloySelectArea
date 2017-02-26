@@ -1,0 +1,69 @@
+body{
+	padding: 0px;
+	margin:0px;
+	box-sizing: border-box;
+}
+div.cv-row-container{ 
+	width: 100%;
+	padding: 0px;
+	background: url(../img/backgroud.png) repeat-x ; 
+	position: fixed;
+    left: 0px;
+    top: 0px;
+}
+div.cv-car-view-container{ 
+	margin: auto;
+	width: 100%;
+	max-width: 750px; 
+	min-width: 320px;
+	/*min-height: 170.66667px;*/
+	padding: 0px;
+	position: absolute;
+}
+
+div.cv-car-view-container img{
+	position: absolute;
+}
+div.cv-car-view-container span{
+	position: absolute;
+}
+
+img.cv-touch-board{
+	width: 100% ; 
+	top:0px;
+	left: 0px;
+	z-index: 10; 
+	
+}
+
+img.cv-back-img{
+	width: 100% ;
+	top: 0px;
+	left: 0px;
+	z-index: 0; 
+}
+
+img.component{
+	width: 100% ; 
+	z-index: 5;
+}
+span.component{
+	width: 100% ; 
+	z-index: 5;
+}
+
+.hidden{
+	visibility:hidden
+	
+} 
+.none{
+	visibility:hidden;
+	 /*display: none; */
+}
+
+div.other-part{ 
+}
+
+.banjin{}
+.penqi{}
+
